@@ -1,2 +1,2 @@
-# V Lang P2P Node Connector Grid
-V Lang P2P Connector Node Grid as a CircularList 
+# P2P Node Connector Grid using V
+P2P Node Connector Grid as a CircularList using V Lanugage
