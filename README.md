@@ -18,35 +18,41 @@ Develop a circular linked list in V where each linked list node acts a P2P socke
 - P2P nodes talk TCP for guaranteed delivery and UDP (for low-latency) exchanges.
 - If a P2P node leaves, the network updates the links dynamically
 
+
 ## Project Structure
 
 ```shell
-p2p-v-network/
-│── Dockerfile
-│── docker-compose.yml
-│── go.mod
-│── .dockerignore
-│── README.md
-│── src/
-│   ├── main.v
-│   ├── node.v
-│   ├── network.v
-│   ├── node_payload.v
-│   ├── db/
-│   │   ├── repository.v  # Repository pattern for database access
-│   │   ├── models.v      # Defines database models
-│── scripts/
-│   ├── build.sh
-│   ├── run.sh
-│── config/
-│   ├── config.toml
-│── sql/
-│   ├── schema.sql  # SQL schema file
-│── tests/
-│   ├── test_network.v
-│   ├── test_node.v
-│   ├── test_db.v
+
 ```
+
+
+
+## Installing V Third-Party Dependencies
+
+```shell
+v install username/package_name
+```
+
+## Updating V Third-Party Dependencies
+
+```shell
+v update
+```
+
+
+
+
+## Compile the Application
+```shell
+v -prod -o bin/p2p-node src/main.v
+```
+
+## Run the Application
+```shell
+./bin/p2p-node --port 8080 --bootstrap-node "192.168.1.10:8080"
+```
+
+
 
 ## Generate Application Docker Image
 
