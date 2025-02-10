@@ -3,7 +3,7 @@ P2P Node Connector Grid as a CircularList using V Language
 
 
 ## Project Architecture
-Develop a circular linked list in V where each linked list node acts a P2P socket node with bidirectional connections to its adjacents. This design assures that each node:
+Develop a circular linked list in V where each linked list node acts a P2P socket node with bidirectional connections to its adjacents. This design assures that **each** node:
 
 - Sustains forward and reverse connections to its adjacents.
 - Talks using (UDP, TCP) sockets 
